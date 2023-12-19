@@ -1,7 +1,7 @@
-# from flask import Flask
-# app = Flask(__name__)
+from flask import Flask
+app = Flask(__name__)
 
-# @app.route('/')
+@app.route('/')
 # обчислює суму перших n членів арифметичної прогресії: Xn = 2, 4, 6 ...
 def arithmetic_progression(n):
     # print("Ivanytska Anna")
@@ -36,5 +36,5 @@ def days_til_birthday(birthdate, today=None):
     days_left = (next_birthday - today).days  # counting days to our birthday 
     return days_left
 
-# if __name__ == '__main__':
-#     app.run(debug=True, host='0.0.0.0', port=3000)
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=3000)
