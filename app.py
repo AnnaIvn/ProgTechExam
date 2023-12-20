@@ -3,7 +3,9 @@ app = Flask(__name__)
 
 @app.route('/')
 # обчислює суму перших n членів арифметичної прогресії: Xn = 2, 4, 6 ...
-def arithmetic_progression(n):
+def arithmetic_progression(n=None):
+    if n is None:
+        n = 1
     # print("Ivanytska Anna")
     if n < 0:
         raise Exception("Inapropriate input (try values bigger than '-1')")
