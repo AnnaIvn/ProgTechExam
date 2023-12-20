@@ -6,4 +6,4 @@ WORKDIR /app
 COPY . /app
 EXPOSE 3000
 ENTRYPOINT [ "python" ]
-CMD ["testing.py"]
+CMD ["app.py"]
