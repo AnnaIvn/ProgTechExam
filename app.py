@@ -2,10 +2,13 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
+def index():
+    n = 11 
+    result = arithmetic_progression(n)
+    return f"Result: {result}"
+
 # обчислює суму перших n членів арифметичної прогресії: Xn = 2, 4, 6 ...
-def arithmetic_progression(n=None):
-    if n is None:
-        n = 1
+def arithmetic_progression(n):
     # print("Ivanytska Anna")
     if n < 0:
         raise Exception("Inapropriate input (try values bigger than '-1')")
