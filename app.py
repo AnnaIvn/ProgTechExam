@@ -9,7 +9,7 @@ def index():
 
 # обчислює суму перших n членів арифметичної прогресії: Xn = 2, 4, 6 ...
 def arithmetic_progression(n):
-    # print("Ivanytska Anna")
+    print("Ivanytska Anna")
     if n < 0:
         raise Exception("Inapropriate input (try values bigger than '-1')")
     a1 = 2  # first term of progression
