@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    n = 11 
+    n = 2 
     result = arithmetic_progression(n)
     return f"Result: {result}"
 
